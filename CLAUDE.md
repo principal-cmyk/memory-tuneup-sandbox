@@ -4,12 +4,13 @@
 We turn each week's raw sales export into one clean summary report — the same shape, every week.
 
 ## Conventions / rules
-- Raw data arrives every **Tuesday** morning in `data/`.
-- Always write the summary using the **report_v1** template.
+- Raw data lands in `data/` — ⚠️ **day unconfirmed**: previously said "Tuesday," but that can't be right now that the report ships Monday. See open task to confirm.
+- Always write the summary using the **report_v2** template — adds a "week-over-week change" line at the top.
 - Currency is USD; round to whole numbers.
 - Drop empty rows before doing any totals.
-- For database access, **ask Sarah** — she owns the data pipeline.
+- Database/pipeline access is self-serve (Sarah, who used to own it, left the team in March).
 - Keep the summary to one page.
+- The report ships **Monday morning** so it's ready for the Monday leadership call.
 
 ## House format for the summary
 1. Headline number (total sales)
@@ -17,9 +18,5 @@ We turn each week's raw sales export into one clean summary report — the same 
 3. Anything unusual (outliers)
 4. One-line takeaway
 
-## Random notes (added over time)
-- We switched to the **v2 template** after the March mix-up — it adds a "week-over-week change" line at the top.
-- Sarah left the team back in March; pipeline access is self-serve now.
-- Reminder: set up a Monday-morning ping so we never forget the report.
-- The report now goes out **Monday** so it's ready for the Monday leadership call.
-- Coffee fund is Ali's desk drawer. (no idea why this is in here)
+## Memory
+Team decisions, lessons, and data notes live in [`memory-index.md`](memory-index.md) — read that first. It points to topic files under `memory/` that only need opening when the task actually touches that topic.

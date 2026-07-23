@@ -55,3 +55,26 @@ Clean and pushed. All five deliverables committed. Nothing in flight.
 
 ## For a fresh session
 The assessment is complete — there's no assessment work left to pick up. The only open items are the real team tasks in `tasks.md`, which need a human (confirm the data-arrival day, chase design for chart colours). If a new week's export lands, the flow is: `clean-and-summarise-dataset` skill for one week's numbers, or the `report-pack` agent for the whole pack end-to-end.
+
+---
+
+# Session — 2026-07-23
+
+## What was done
+Audited all five deliverables against `ASSESSMENT.md`'s rubric and assembled the actual submission at `SUBMISSION.md`. No deliverable was rebuilt — all five were already correct.
+
+## Key decisions made
+- **The missing piece was the submission, not the work.** `ASSESSMENT.md` asks for "what Claude produced for each, **plus one line on what you asked**." Every artifact existed; the assembled package and the prompt lines never did. That gap is what this session closed.
+- **The "what I asked" lines are labelled as reconstructed, not quoted.** The original prompts from the 2026-07-02 and 2026-07-16 sessions were never recorded. They were rebuilt from what the work demonstrably did and flagged as such in `SUBMISSION.md`. Passing them off as verbatim would be inventing evidence. **Record the actual prompt at the time in future** — it's a required part of the submission, and it can't be recovered afterwards.
+- **Nothing was rebuilt to look productive.** Re-doing task 3 would mean recreating `memory.md` just to re-split it — actively undoing the deliverable. When work is already done, the honest move is to verify and say so.
+
+## Verification performed this session
+- **Task 3 integrity:** diffed the split against the original `memory.md` from `upstream/main`. Its three sections map 1:1 onto `memory/{decisions,lessons,data}.md` — 4, 3 and 4 bullets. Nothing dropped, nothing invented.
+- **Task 4 arithmetic:** recomputed `data/week-42-raw.csv` independently again. Headline $1,227 across six computable rows; Stapler correctly flagged (missing `units`); blank row dropped. Matches the skill's example exactly.
+- **Task 1 completeness:** diffed current `CLAUDE.md`/`tasks.md` against upstream originals. All four stale claims fixed, three junk items cut, one finished task closed, one follow-up added — now tabulated in `SUBMISSION.md`.
+
+## Repo note
+`upstream` remote points at `taleemabad-university/memory-tuneup-sandbox` (the starter). `git log HEAD..upstream/main` is empty — upstream holds nothing this fork lacks, so there is never a need to re-clone it. Use it only as a pristine baseline for diffs.
+
+## For a fresh session
+Assessment complete *and* submitted. Still no assessment work outstanding. The open `tasks.md` items remain real human to-dos — above all confirming the actual data-arrival day, which `CLAUDE.md` still carries as `⚠️ day unconfirmed`.
